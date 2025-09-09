@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tab</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; }
+    table {
+      width: 90%;
+      margin: 40px auto;
+      border: 2px solid #555;
+      border-collapse: collapse;
+      table-layout: fixed;     
+    }
+    td {
+      height: 220px;          
+      padding: 24px;
+      vertical-align: middle;  
+      border-right: 2px solid #555;
+      font-size: 1.25rem;
+      color: #333;
+    }
+    td:last-child { border-right: none; }
+    .first  { background: #b8c070; } 
+    .second { background: #f3b69f; } 
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="first">First cell</td>
+      <td class="second">Second cell</td>
+    </tr>
+  </table>
+</body>
+</html>
