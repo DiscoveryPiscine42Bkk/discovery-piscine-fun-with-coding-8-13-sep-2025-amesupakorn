@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>It’s over 9000</title>
+  <link rel="stylesheet" href="calc.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Simple Calculator</h1>
+
+    <div class="calc">
+      <input id="left" type="number" placeholder="Left number" min="0" />
+      <select id="op" aria-label="Operator">
+        <option value="+">+</option>
+        <option value="-">−</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+        <option value="%">%</option>
+      </select>
+      <input id="right" type="number" placeholder="Right number" min="0" />
+      <input id="calcBtn" type="button" value="Try me!" />
+    </div>
+  </main>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="calc.js"></script>
+</body>
+</html>

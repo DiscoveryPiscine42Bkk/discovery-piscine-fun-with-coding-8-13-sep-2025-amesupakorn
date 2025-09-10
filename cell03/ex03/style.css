@@ -1,0 +1,21 @@
+ body { 
+    font-family: sans-serif; 
+    background:#f5f5f5; 
+}
+#ft_list { 
+    margin: 20px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    background: #fff; 
+}
+#ft_list div { 
+    padding: 8px; 
+    margin: 4px 0; 
+    background: #e3e3ff; 
+    cursor: pointer; 
+    border-radius: 4px; 
+}
+button { 
+    margin: 20px; 
+    padding: 8px 16px; 
+}
