@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.5s ease;
+}
+
+button {
+  padding: 24px 24px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
