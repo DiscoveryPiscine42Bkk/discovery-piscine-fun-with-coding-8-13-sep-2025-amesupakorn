@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SNCF Sandwich Menu</title>
-  <link rel="stylesheet" href="menu.css">
+  <meta charset="UTF-8" />
+  <title>SNCF Sandwich</title>
+  <link rel="stylesheet" href="menu.css" />
 </head>
 <body>
   <nav class="navbar">
     <ul class="menu">
       <li><a href="#">Home</a></li>
+
       <li class="dropdown">
-        <a href="#">Sandwiches ▾</a>
+        <a href="#" class="trigger">Sandwich ▾</a>
         <ul class="submenu">
-          <li><a href="#">Ham & Cheese</a></li>
+          <li><a href="#">Ham &amp; Cheese</a></li>
           <li><a href="#">Turkey</a></li>
           <li><a href="#">Veggie</a></li>
+          <li class="sep"></li>
+          <li><a href="#">Customize</a></li>
         </ul>
       </li>
-      <li><a href="#">Drinks</a></li>
+
+      <li class="dropdown">
+        <a href="#" class="trigger">Drinks ▾</a>
+        <ul class="submenu right">
+          <li><a href="#">Coffee</a></li>
+          <li><a href="#">Tea</a></li>
+          <li><a href="#">Sparkling</a></li>
+        </ul>
+      </li>
+
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
