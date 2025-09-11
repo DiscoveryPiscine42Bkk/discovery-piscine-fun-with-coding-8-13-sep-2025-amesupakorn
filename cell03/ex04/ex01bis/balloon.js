@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
   const $balloon = $("#balloon");
   const colors = ["red", "green", "blue"];
   let colorIndex = 0;
