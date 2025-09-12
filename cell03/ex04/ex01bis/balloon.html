@@ -3,11 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <title>Explode this balloon</title>
-  <link rel="stylesheet" href="balloon.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #balloon {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      transition: width 0.2s, height 0.2s, background-color 0.2s;
+    }
+  </style>
 </head>
 <body>
   <div id="balloon"></div>
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="balloon.js"></script>
+  <script>
+    $(function () {
+      const $balloon = $("#balloon");
+      const colors = ["red", "green", "blue"];
+      let colorIndex = 0;
+      let size = 200;
+
+      $balloon.on("click", function () {
+        size += 10;
+        colorIndex = (colorIndex + 1) % colors.length;
+
+        $balloon.css({
+          width: size + "px",
+          height: size + "px",
+          backgroundColor: colors[colorIndex],
+        });
+
+        if (size > 420) {
+          size = 200;
+          colorIndex = 0;
+          setTimeout(() => {
+            $balloon.css({
+              width: "200px",
+              height: "200px",
+              backgroundColor: colors[0],
+            });
+          }, 200);
+        }
+      });
+
+      $balloon.on("mouseleave", function () {
+        size = Math.max(200, size - 5);
+        colorIndex = (colorIndex - 1 + colors.length) % colors.length;
+
+        $balloon.css({
+          width: size + "px",
+          height: size + "px",
+          backgroundColor: colors[colorIndex],
+        });
+      });
+    });
+  </script>
 </body>
 </html>

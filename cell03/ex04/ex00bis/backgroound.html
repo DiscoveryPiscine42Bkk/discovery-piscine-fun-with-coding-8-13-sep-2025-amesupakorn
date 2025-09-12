@@ -8,6 +8,17 @@
 <body>
   <button id="change-bg">Change Background</button>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="backgroound.js"></script>
+  <script>
+    $(function () {
+      $("#change-bg").on("click", function () {
+        const randomColor = `rgb(
+          ${Math.floor(Math.random() * 256)},
+          ${Math.floor(Math.random() * 256)},
+          ${Math.floor(Math.random() * 256)}
+        )`;
+        $("body").css("background-color", randomColor);
+      });
+    });
+  </script>
 </body>
 </html>
